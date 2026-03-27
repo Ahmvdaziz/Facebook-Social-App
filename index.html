@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook - Social Network</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo">facebook</div>
+  <div class="nav-center">
+    <button class="active" title="Home">🏠</button>
+    <button title="Watch">▶️</button>
+    <button title="Marketplace">🛍️</button>
+    <button title="Groups">👥</button>
+    <button title="Gaming">🎮</button>
+  </div>
+  <div class="nav-right">
+    <button class="icon-btn" title="Menu">☰</button>
+    <button class="icon-btn" title="Messenger">💬</button>
+    <button class="icon-btn" title="Notifications">🔔</button>
+    <div class="avatar-small">A</div>
+  </div>
+</nav>
+
+<!-- MAIN LAYOUT -->
+<div class="main-layout">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar-left">
+    <div class="user-profile">
+      <div class="avatar-small">A</div>
+      <span>Ahmed Aziz</span>
+    </div>
+    <hr class="sidebar-divider">
+    <nav class="sidebar-nav">
+      <a href="#"><span class="icon">👥</span> Friends</a>
+      <a href="#"><span class="icon">🕑</span> Memories</a>
+      <a href="#"><span class="icon">🔖</span> Saved</a>
+      <a href="#"><span class="icon">👥</span> Groups</a>
+      <a href="#"><span class="icon">▶️</span> Video</a>
+      <a href="#"><span class="icon">🛍️</span> Marketplace</a>
+      <a href="#"><span class="icon">🎮</span> Gaming</a>
+    </nav>
+  </aside>
+
+  <!-- FEED -->
+  <main class="feed">
+
+    <!-- Stories -->
+    <div class="stories">
+      <div class="story-card story-add">
+        <div class="story-add-circle">+</div>
+        <span class="story-name">Add Story</span>
+      </div>
+      <div class="story-card" style="background:linear-gradient(135deg,#1877f2,#42b883)">
+        <div class="story-bg">
+          <div class="story-avatar" style="background:#e91e8c">A</div>
+          <span class="story-name">Ahmed Aziz</span>
+        </div>
+      </div>
+      <div class="story-card" style="background:linear-gradient(135deg,#f6830f,#f02b2b)">
+        <div class="story-bg">
+          <div class="story-avatar" style="background:#6200ea">A</div>
+          <span class="story-name">Ahmed Sayed</span>
+        </div>
+      </div>
+      <div class="story-card" style="background:linear-gradient(135deg,#00bcd4,#1de9b6)">
+        <div class="story-bg">
+          <div class="story-avatar" style="background:#ff5722">S</div>
+          <span class="story-name">Shahd Mohamed</span>
+        </div>
+      </div>
+      <div class="story-card" style="background:linear-gradient(135deg,#8e24aa,#e91e63)">
+        <div class="story-bg">
+          <div class="story-avatar" style="background:#0097a7">O</div>
+          <span class="story-name">Omar Hassan</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create Post -->
+    <div class="create-post">
+      <div class="create-post-top">
+        <div class="avatar-small">A</div>
+        <input class="create-post-input" type="text" placeholder="What's on your mind, Ahmed?" readonly id="openModalBtn">
+      </div>
+      <div class="create-post-actions">
+        <button>📹 Live video</button>
+        <button>🖼️ Photo/video</button>
+        <button>😊 Feeling/activity</button>
+      </div>
+    </div>
+
+    <!-- Posts Container -->
+    <div id="posts-container"></div>
+
+  </main>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="sidebar-right">
+    <h4>Contacts</h4>
+    <div id="contacts"></div>
+  </aside>
+
+</div>
+
+<!-- CREATE POST MODAL -->
+<div class="modal-overlay" id="postModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Create post</h3>
+      <button class="modal-close" id="closeModal">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="user-row">
+        <div class="avatar-small">A</div>
+        <span>Ahmed Aziz</span>
+      </div>
+      <textarea class="post-textarea" id="postText" placeholder="What's on your mind, Ahmed?"></textarea>
+      <button class="post-submit" id="submitPost" disabled>Post</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</head>
+<body>
+
+</body>
+</html>
