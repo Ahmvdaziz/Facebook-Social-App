@@ -346,3 +346,29 @@ document.addEventListener('DOMContentLoaded', () => {
   renderContacts();
   renderPosts();
 });
+// ── NAV BUTTONS ACTIVE STATE ──
+document.querySelectorAll(".nav-center button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".nav-center button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+  });
+});
+
+// ── INIT ──
+document.addEventListener('DOMContentLoaded', () => {
+  renderContacts();
+  renderPosts();
+});
+// ── NAV BUTTONS ACTIVE STATE ──
+document.querySelectorAll(".nav-center button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".nav-center button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+  });
+});
+
+// ── INIT ──
+document.addEventListener('DOMContentLoaded', () => {
+  renderContacts();
+  renderPosts();
+});
